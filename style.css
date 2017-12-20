@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* 图片部分 */
+.swiper{
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+/* 伪类 */
+.swiper:hover .sliderCtrlPrev ,
+.swiper:hover .sliderCtrlNext{
+    display: block;
+}
+
+.slider{
+    width: 600px;
+    height: 400px;
+}
+.sliderMain{
+    width: 1200px;
+    height: 400px;
+}
+.sliderMainImg{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.sliderMainImg img{
+    width: 600px;
+    height: 400px;
+}
+
+/* 按钮部分 */
+/* 左右按钮 */
+.sliderCtrl{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 30px;
+
+}
+.sliderCtrl .sliderCtrlPrev , .sliderCtrl .sliderCtrlNext{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: -160px;
+    display: none;
+}
+.sliderCtrlPrev img , .sliderCtrlNext Img{
+    height: 40px;
+}
+.sliderCtrlPrev{
+    left: -180px;
+}
+.sliderCtrlNext{
+    right: -180px;
+}
+/* 小按钮 */
+
+.sliderCtrlCon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin: 5px 2px; 
+    background-color: rgba(255, 255, 255, .2);
+    display: inline-block;
+    vertical-align: middle;
+}
+.current{
+    background-color: rgb(241, 160, 9);
+}
